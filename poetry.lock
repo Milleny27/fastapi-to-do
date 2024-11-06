@@ -502,6 +502,20 @@ files = [
 ]
 
 [[package]]
+name = "pkginfo"
+version = "1.11.2"
+description = "Query metadata from sdists / bdists / installed packages."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "pkginfo-1.11.2-py3-none-any.whl", hash = "sha256:9ec518eefccd159de7ed45386a6bb4c6ca5fa2cb3bd9b71154fae44f6f1b36a3"},
+    {file = "pkginfo-1.11.2.tar.gz", hash = "sha256:c6bc916b8298d159e31f2c216e35ee5b86da7da18874f879798d0a1983537c86"},
+]
+
+[package.extras]
+testing = ["pytest", "pytest-cov", "wheel"]
+
+[[package]]
 name = "pluggy"
 version = "1.5.0"
 description = "plugin and hook calling mechanisms for python"
@@ -557,6 +571,7 @@ files = [
 
 [package.dependencies]
 annotated-types = ">=0.6.0"
+email-validator = {version = ">=2.0.0", optional = true, markers = "extra == \"email\""}
 pydantic-core = "2.23.4"
 typing-extensions = {version = ">=4.12.2", markers = "python_version >= \"3.13\""}
 
@@ -1213,4 +1228,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.*"
-content-hash = "97e041d518f4b2aa371530fc52fb115ad7a37bdcb19488f3d944ed00ae16f00e"
+content-hash = "5ca53eb4dbf65d89a74e43b451622b564d12795acffda7c5136da49d010fb814"
